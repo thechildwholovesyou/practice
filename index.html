@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="btn">Click ME</button>
+  </body>
+
+  <script>
+    const users = [
+      { firstName: "Alok", lastName: "Raj", age: 23 },
+      { firstName: "Ashish", lastName: "Kumar", age: 29 },
+      { firstName: "Ankit", lastName: "Roy", age: 29 },
+      { firstName: "Pranav", lastName: "Mukherjee", age: 50 },
+    ];
+
+    // first name of all those persons whose age is leess than 30;
+
+    let names = users.reduce((acc, e) => {
+      if (e.age < 30) acc.push(e.firstName);
+
+      return acc;
+    }, []);
+
+    console.log(names);
+  </script>
+</html>
