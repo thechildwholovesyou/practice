@@ -8,24 +8,8 @@
   </head>
   <body>
     <button id="btn">Click ME</button>
+    <input id="inp" type="text" />
   </body>
 
-  <script>
-    const users = [
-      { firstName: "Alok", lastName: "Raj", age: 23 },
-      { firstName: "Ashish", lastName: "Kumar", age: 29 },
-      { firstName: "Ankit", lastName: "Roy", age: 29 },
-      { firstName: "Pranav", lastName: "Mukherjee", age: 50 },
-    ];
-
-    // first name of all those persons whose age is leess than 30;
-
-    let names = users.reduce((acc, e) => {
-      if (e.age < 30) acc.push(e.firstName);
-
-      return acc;
-    }, []);
-
-    console.log(names);
-  </script>
+  <script src="debouncing.js"></script>
 </html>

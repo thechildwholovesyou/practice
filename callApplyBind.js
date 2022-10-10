@@ -13,5 +13,5 @@ let p2 = {
   age: 20,
 };
 
-let ans = showDetails.bind(p1, "Riding");
-console.log(ans());
+let ans = showDetails.bind(p1, ["cycling"]);
+ans();

@@ -60,3 +60,6 @@ let res1 = arr2.reduce((acc, e) => {
 
 console.log(res1);
 
+// polyfill of bind
+
+
